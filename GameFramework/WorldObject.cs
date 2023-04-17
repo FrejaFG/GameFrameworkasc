@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class WorldObject
+    public class WorldObject
     {
+        private int id;
+        private bool lootable;
+        private string? name;
+        private bool removable;
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class AttackItem
+    public class AttackItem
     {
+        private int hitpoint;
+        private string name;
+        private Range range;
     }
 }

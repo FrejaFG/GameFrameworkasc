@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class Creature
+    public class Creature
     {
+        private string creatureName;
+        private int creatureHitpoint;
+        private int creatureDamage;
+
+        public Creature() 
+        {
+        }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class PositionItem
+    public class PositionItem
     {
+        public int xPosition;
+        public int yPosition;
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class DefenceItem
+    public class DefenceItem
     {
+        private string name;
+        private int reduceHitpoint;
     }
 }

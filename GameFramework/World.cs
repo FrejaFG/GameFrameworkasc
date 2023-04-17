@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal class World
+    public class World
     {
+        private int worldWidth;
+        private int worldHeight;
+
+
     }
 }
