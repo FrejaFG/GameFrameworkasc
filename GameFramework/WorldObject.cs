@@ -8,9 +8,10 @@ namespace GameFramework
 {
     public class WorldObject
     {
-        private int id;
-        private bool lootable;
-        private string? name;
-        private bool removable;
+        public bool Lootable { get; set; }
+        public string Name { get; set; }
+        public bool Removable { get; set; }
+
+
     }
 }

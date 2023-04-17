@@ -8,12 +8,13 @@ namespace GameFramework
 {
     public class Creature
     {
-        private string creatureName;
-        private int creatureHitpoint;
-        private int creatureDamage;
+        private string _creatureName;
+        private int _creatureHitpoint;
 
-        public Creature() 
+        public PositionItem Position { get; set; }
+        public Creature()
         {
+
         }
     }
 }

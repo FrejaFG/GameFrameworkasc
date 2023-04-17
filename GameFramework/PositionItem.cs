@@ -8,7 +8,14 @@ namespace GameFramework
 {
     public class PositionItem
     {
-        public int xPosition;
-        public int yPosition;
+        World world = new World();
+
+        /// <summary>
+        /// Coordinates of a position in the world
+        /// </summary>
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        
     }
 }

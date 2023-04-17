@@ -8,7 +8,7 @@ namespace GameFramework
 {
     public class DefenceItem
     {
-        private string name;
-        private int reduceHitpoint;
+        public string NameDefenceItem { get; set; }
+        public int ReduceHitPoint { get; set; }
     }
 }
