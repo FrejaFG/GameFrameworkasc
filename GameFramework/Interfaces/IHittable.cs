@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameFramework
+namespace GameFramework.Interfaces
 {
     public interface IHittable
     {
-        EventHandler OnGetHit { get; set; }
+        public EventHandler OnGetHit { get; set; }
 
-        void GetHit(int damage, Creature hitpoint);
+        public void GetHit(int damage, Creature hitpoint);
     }
 }

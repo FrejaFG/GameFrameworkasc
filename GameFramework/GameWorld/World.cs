@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameFramework
+namespace GameFramework.GameWorld
 {
     [Serializable]
     public class World
@@ -15,14 +15,14 @@ namespace GameFramework
         /// World size - default value 100^2
         /// </summary>
 
-        
+
         public int Width { get; set; }
         public int Height { get; set; }
 
         public List<WorldObject> Objects { get; set; }
 
         public List<Creature> Creatures { get; set; }
-        
+
 
 
     }

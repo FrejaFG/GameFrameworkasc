@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameFramework.Interfaces;
 
-namespace GameFramework
+namespace GameFramework.Actions
 {
     public class AttackItem : IHittable
     {
@@ -12,9 +13,9 @@ namespace GameFramework
         private string name;
         private Range range;
 
-        EventHandler IHittable.OnGetHit 
-        { 
-            get => throw new NotImplementedException(); 
+        EventHandler IHittable.OnGetHit
+        {
+            get => throw new NotImplementedException();
             set => throw new NotImplementedException();
         }
 

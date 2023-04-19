@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameFramework.Actions;
+using GameFramework.GameWorld;
+using GameFramework.Interfaces;
 
 namespace GameFramework
 {
@@ -26,6 +29,11 @@ namespace GameFramework
 
         }
 
+        /// <summary>
+        /// Hitting and killing creature
+        /// </summary>
+        /// <param name="damage"></param>
+        /// <param name="hitpoint"></param>
         public void GetHit(int damage, Creature hitpoint)
         {
             if(dead==false)
