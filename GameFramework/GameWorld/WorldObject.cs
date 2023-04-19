@@ -12,6 +12,13 @@ namespace GameFramework.GameWorld
         public string Name { get; set; }
         public bool Removable { get; set; }
 
+        public PositionItem position { get; set; }
+
+        public WorldObject()
+        {
+
+        }
+
 
     }
 }
