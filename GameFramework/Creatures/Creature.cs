@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using GameFramework.Actions;
 using GameFramework.GameWorld;
 using GameFramework.Interfaces;
+using GameFramework.State;
 
-namespace GameFramework
+namespace GameFramework.Creature
 {
     public class Creature : IHittable, ICreature
     {
@@ -19,6 +20,8 @@ namespace GameFramework
         public int Health { get; set; }
         private bool dead = false;
         public AttackItem attack { get; set; }
+        public ChangeState CurrentState { get; private set; }
+
         public EventHandler OnGetHit { get; set; }
         public EventHandler OnDie { get; set; }
 
@@ -36,16 +39,35 @@ namespace GameFramework
         /// <param name="hitpoint"></param>
         public void GetHit(int damage, Creature hitpoint)
         {
-            if(dead==false)
+            if (dead == false)
             {
                 Health--;
                 // Is anyone listening?
-                if(Health<=0)
+                if (Health <= 0)
                 {
-                    dead= true;
+                    dead = true;
                 }
 
             }
+        }
+
+        /// <summary>
+        /// get hit implemented through attack
+        /// </summary>
+        /// <param name="damage"></param>
+        /// <param name="hitpoint"></param>
+        public void GetHit(int damage, ICreature hitpoint)
+        {
+            ((IHittable)attack).GetHit(damage, hitpoint);
+        }
+
+        /// <summary>
+        /// Changes the state of the Creature
+        /// </summary>
+        /// <param name="state"></param>
+        internal void ChangeToState(ChangeState state)
+        {
+            CurrentState = state;
         }
     }
 }

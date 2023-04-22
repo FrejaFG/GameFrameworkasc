@@ -8,7 +8,7 @@ namespace GameFramework.GameWorld
 {
     public class PositionItem
     {
-        World world = new World();
+       // World world = new World();
 
         /// <summary>
         /// Coordinates of a position in the world

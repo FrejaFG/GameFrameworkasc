@@ -19,14 +19,14 @@ namespace GameFramework.Actions
             set => throw new NotImplementedException();
         }
 
-        public void GetHit(int damage, Creature hitpoint)
+        public void GetHit(int damage, ICreature hitpoint)
         {
             throw new NotImplementedException();
         }
 
         public EventHandler OnGetHit()
         {
-            return OnGetHit;
+            return OnGetHit();
         }
     }
 }

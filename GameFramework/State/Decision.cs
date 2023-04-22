@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameFramework.State
 {
-    public class PickObjectState
+    public abstract class Decision
     {
-
+        public abstract bool MakeDecision();
     }
 }

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<State>
+	<State1>Attack</State1>
+	<State2>Defense</State2>
+	<State3>Idle</State3>
+</State>

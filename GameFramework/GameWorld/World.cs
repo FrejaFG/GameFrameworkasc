@@ -21,7 +21,7 @@ namespace GameFramework.GameWorld
 
         public List<WorldObject> Objects { get; set; }
 
-        public List<Creature> Creatures { get; set; }
+        //public List<Creature> Creatures { get; set; }
 
 
 

@@ -10,6 +10,6 @@ namespace GameFramework.Interfaces
     {
         public EventHandler OnGetHit { get; set; }
 
-        public void GetHit(int damage, Creature hitpoint);
+        public void GetHit(int damage, ICreature hitpoint);
     }
 }
